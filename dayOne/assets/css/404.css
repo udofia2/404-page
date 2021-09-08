@@ -1,0 +1,115 @@
+* {
+  font-weight: 600;
+  font-family: "mono space";
+  font-style: normal;
+  /* font-weight: bold; */
+}
+
+.container {
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh; */
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 650px) {
+  section {
+    /* background-color: aquamarine; */
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 1fr 1fr;
+  }
+  section .right_section h1 {
+    width: 80%;
+    font-size: 2.5em;
+    line-height: 65px;
+    /* letter-spacing: -0.035em; */
+  }
+  section .right_section p {
+    font-size: 20px;
+    line-height: 36px;
+    width: 381px;
+    font-weight: 100;
+  }
+  section button {
+    width: 200px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #333;
+    margin-top: 30px;
+  }
+  
+  section .left_section img {
+    width: 65%;
+    height: auto;
+    margin: 70px 30px;
+    /* margin: 34.03%; */
+  }
+  
+  nav .tilte {
+    /* position: relative;
+    width: 375px;
+    height: 949px;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; */
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+  .container {
+    margin: 30px;
+    margin-top: 0%;
+  }
+  
+  section {
+    grid-template-columns: 1fr;
+  } /* margin: 34.03%; */
+  
+  section .left_section img {
+    width: 65%;
+    height: auto;
+    margin: 50px;
+  }
+  
+  section .right_section h1 {
+    width: 90%;
+    font-size: 1.3em;
+    line-height: 33px;
+    margin-top: -15px;
+    letter-spacing: 0.19em;
+    word-spacing: .8em;
+  }
+  
+  section .right_section p {
+    font-size: 15px;
+    /* line-height: 30px; */
+    width: 270px;
+    font-weight: 100;
+    margin-top: -12px;
+  }
+  section button {
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #333;
+    /* margin-top: 0px; */
+    text-align: center;
+  }
+}
+
+.footer p {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  font-size: small;
+}
